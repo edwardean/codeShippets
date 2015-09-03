@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>arc</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>ClassImplementation</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>
+#if __has_feature(objc_arc)
+#else
+
+- (void) dealloc{
+   
+  NSLog(@"function %s line=%d",__FUNCTION__,__LINE__);
+  [super dealloc];
+     
+}
+#endif
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>06DF43DC-22CA-46D2-924A-2B0D93AFE4FA</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>hasfea</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>是否支持ARC</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

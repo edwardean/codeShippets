@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>touch</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>ClassImplementation</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>- (void) touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event{
+    
+    [super touchesBegan:touches withEvent:event];
+   
+    
+}
+
+- (void) touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event{
+    
+    [super touchesMoved:touches withEvent:event];
+   
+    
+}
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>F24D5777-35DD-4B10-83BC-73D55C5E11CB</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>快速书写 touch 时间 ---&gt;touch</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>touch began move</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>
