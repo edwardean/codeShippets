@@ -3,23 +3,24 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>angle</string>
+	<string>pra</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>#define DegreesToRadians(degrees) (degrees * M_PI / 180)
-#define RadiansToDegrees(radians) (radians * 180 / M_PI)
-</string>
+	<string>#pragma clang diagnostic push
+#pragma clang diagnostic ignored "&lt;#...#&gt;"
+    
+#pragma clang diagnostic pop</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>8993EA98-DA61-4C74-B0E7-059003B46C48</string>
+	<string>2F71C4CA-9D2C-4CB6-B6CD-31E5315ECF87</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>角度弧度转换</string>
+	<string>clang diagnostic</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>角度弧度转换</string>
+	<string>clang diagnostic</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

@@ -17,7 +17,14 @@ static &lt;#self class#&gt; *singleton;
     dispatch_once(&amp;singletonToken, ^{
         singleton = [[self alloc] init];
     });
-    
+    return singleton;
+}
+
++ (instancetype)allocWithZone:(struct _NSZone *)zone {
+    static dispatch_once_t singletonToken;
+    dispatch_once(&amp;singletonToken, ^{
+        singleton = [super allocWithZone:zone];
+    });
     return singleton;
 }</string>
 	<key>IDECodeSnippetIdentifier</key>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>gen</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>// Define some preprocessor macros that allow generics to be adopted in a backwards-compatible manner.
+#if __has_feature(objc_generics)
+#   define __PL_GENERICS(class, ...)        class&lt;__VA_ARGS__&gt;
+#else
+#   define __PL_GENERICS(class, ...)        class
+#endif
+
+// Using generics with NSArray is so common in PureLayout that it gets a dedicated preprocessor macro for better readability.
+#define __NSArray_of(type) 
+
+// Using generics with NSMutableArray is so common in the internal implementation of PureLayout that it gets a dedicated preprocessor macro for better readability.
+#define __NSMutableArray_of(type)                   __PL_GENERICS(NSMutableArray, type)</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>3F3C9B0E-BF9F-4E52-9E4D-E84F07DF8384</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>泛型宏定义</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>
